@@ -77,40 +77,35 @@
             <div class="my-3 mt-5">
                 <button class="btn btn-outline-dark rounded-pill mx-auto d-block px-5" type="submit">Confirmar</button>
             </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const confirmButton = document.querySelector("button[type=submit]");
-    const agreeCheckbox = document.querySelector(".form-check-input");
-    const emailInput = document.getElementById("email");
-
-    confirmButton.onclick = function(event) {
-        if (agreeCheckbox.checked && emailInput.validity.valid) {
-            
-            alert("Obrigado por se voluntariar.Entraremos em contato.");
-        } else {
         
-            event.preventDefault();
-        }
-    };
-});
-</script>          
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const confirmButton = document.querySelector("button[type=submit]");
-        const agreeCheckbox = document.querySelector(".form-check-input");
-        const emailInput = document.getElementById("email");
-    
-        confirmButton.onclick = function(event) {
-            if (agreeCheckbox.checked && emailInput.validity.valid) {
-                alert("Obrigado por se voluntariar. Entraremos em contato.");
-                
-                window.location.href = "index.html";
-            } else {
-                event.preventDefault();
-            }
-        };
-    });
-    </script>  
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const confirmButton = document.querySelector("button[type=submit]");
+                    const agreeCheckbox = document.querySelector(".form-check-input");
+                    const emailInput = document.getElementById("email");
+        
+                    const checkFormValidity = function() {
+                        if (agreeCheckbox.checked && emailInput.validity.valid) {
+                            confirmButton.removeAttribute("disabled");
+                        } else {
+                            confirmButton.setAttribute("disabled", "disabled");
+                        }
+                    };
+        
+                    confirmButton.setAttribute("disabled", "disabled");
+                    emailInput.addEventListener("input", checkFormValidity);
+                    agreeCheckbox.addEventListener("change", checkFormValidity);
+        
+                    confirmButton.onclick = function(event) {
+                        if (agreeCheckbox.checked && emailInput.validity.valid) {
+                            alert("Obrigado por se voluntariar. Entraremos em contato.");
+                            window.location.href = "index.html";
+                        } else {
+                            event.preventDefault();
+                        }
+                    };
+                });
+            </script>
         </form>
     </div>
 </body>
