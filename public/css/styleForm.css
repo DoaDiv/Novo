@@ -1,0 +1,32 @@
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    
+}
+
+
+.btn{
+    justify-content: center;
+    font-size: large;
+    background-color: black;
+    color: antiquewhite;
+    margin-top: 7px;
+    
+}
+
+.form-check{
+    font-size: 20px;
+}

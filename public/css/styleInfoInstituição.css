@@ -1,0 +1,82 @@
+/* css-bar  */
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    color: #b491e8;
+    font-size: 17px;
+}
+
+.nav-active{
+    margin-left: 45px;
+}
+
+.icon-perfil{
+    color: #b491e8;
+    font-size: 33px;
+    
+}
+
+/* css-body */
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.endereco{
+    padding: 20px;
+    font-size: 22px;
+    color: #646464;
+    padding-bottom: 5px;
+}
+
+.inst-ONG{
+    padding: 20px;
+    font-size: 22px;
+    color: #646464;
+    padding-top: 5px;
+}
+
+.descricao{
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+
+/* botões */
+.btn{
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+
+}
+
+
+
+.div-noticias{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* css-footer */
+footer{
+    background-color: black;
+    color: #b491e8;
+    text-align: center
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}

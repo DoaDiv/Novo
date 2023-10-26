@@ -1,0 +1,54 @@
+/* css-bar  */
+nav{
+    background-color: black;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    color: #b491e8;
+    font-size: 17px;
+}
+
+.nav-active{
+    margin-left: 45px;
+}
+
+.icon-perfil{
+    color: #b491e8;
+    font-size: 33px;
+    
+}
+
+/* css-body */
+
+body{
+    background-color: #eeeeee;
+}
+
+h5{
+    text-align: center;
+}
+
+.card-img-top{
+    height: 250px;
+    
+}
+
+
+
+/* css-footer */
+footer{
+    background-color: black;
+    color: #b491e8;
+    text-align: center
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}
